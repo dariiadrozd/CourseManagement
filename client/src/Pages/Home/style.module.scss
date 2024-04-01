@@ -1,25 +1,37 @@
 .wrapper {
-    width: 800px;
-    margin: 50px auto;
+    background-color: #f7f7f8;
+    height: 700px;
 
-    .wripperBox {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0.5vw;
+    .item {
+        width: 800px;
+        margin: 50px auto;
+
+        button {
+            height: 30px;
+        }
 
         .box {
-            width: 448px;
+            width: 350px;
             height: 136px;
-            border: 1px solid rgb(140, 140, 140);
+            border: 1px solid #dadada;
             background-color: white;
-            margin: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            h2{
-                color: blue;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+
+            h2 {
+                color: rgb(89, 139, 231);
             }
         }
-    }
 
+        .wrapperBox {
+            display: grid;
+            grid-template-columns: 10fr 1fr;
+        }
+
+        .pagination {
+            margin-top: 50px;
+            margin-left: 290px;
+        }
+    }
 }

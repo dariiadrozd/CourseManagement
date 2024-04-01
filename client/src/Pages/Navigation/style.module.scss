@@ -1,22 +1,36 @@
 .wrapper {
-    width: 800px;
-    margin: 50pz auto;
-
-    .name {
+    background-color: #f7f7f8;
+    height: 700px;
+    .item {
+      width: 700px;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  
+      .name {
         display: flex;
         justify-content: space-between;
-        width: 640px;
-
-        h3 {
-            font: 700 20px Inter;
+        width: 700px;
+        h3:hover {
+          font: 700 20px "Inter";
+          vertical-align: middle;
+          color: #0989d3;
+          cursor: pointer;
         }
-    }
-
-    .course {
-       margin-bottom: 20px;
+      }
+  
+      .course {
         p {
-            font: 700 20px Inter;
+          margin-bottom: 8px;
+          font: 700 16px "Inter";
         }
+      }
+      .description {
+        p {
+          margin-bottom: 8px;
+          font: 700 16px "Inter";
+        }
+      }
     }
-
-}
+  }

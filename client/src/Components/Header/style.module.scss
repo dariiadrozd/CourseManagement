@@ -1,19 +1,33 @@
-.wrapper{
-    width: 1000px;
-    display: flex;
-align-items: center;
-
-    h1{
-        font: 600 36px 'Poppins';
-    }
-
-    .headerAdmin{
-      width: 250px;
+.wrapper {
+    background-color: #ffffff;
+  
+    .item {
+      width: 1000px;
       display: flex;
       justify-content: space-between;
-    margin-left: 100px;
+      align-items: center;
+      margin: 0 auto;
+      padding: 20px;
+      h1 {
+        font: 600 24px "Poppins";
+      }
+  
+      .admin {
+        display: flex;
+        gap: 50px;
+        margin-right: 350px;
+  
+        .headerAdmin:hover {
+          font: 500 16px "Inter";
+          color: #232124;
+          cursor: pointer;
+        }
+  
+        .headerWitch:hover {
+          font: 400 16px "Inter";
+          color: #232124;
+          cursor: pointer;
+        }
+      }
     }
-    .headerWitch{
-       font: 500 16px Inter;
-    }
-}
+  }

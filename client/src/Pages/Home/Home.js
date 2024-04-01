@@ -58,24 +58,28 @@ function Home() {
     const displayedArray = arr.slice(firstIndex, lastIndex);
 
     return (<div className={style.wrapper}>
-        <Input
-            leftSection={<IconSearch size={16} />}
-            rightSectionWidth="80px"
-            rightSection={<Button variant="filled">Поиск</Button>}
-            placeholder="Введите название компании"
-        />
-        <div className={style.wripperBox}>
+        <Header></Header>
+        <div className={style.item}>
 
-            {displayedArray.map((el) => <div className={style.box}><h2>{el.title}</h2><p>{el.info}</p><p>{el.city}</p></div>)}
+            <Input
+                leftSection={<IconSearch size={16} />}
+                rightSectionWidth="90px"
+                rightSection={<Button variant="filled">Поиск</Button>}
+                placeholder="Введите название курса"
+            />
+
+            <div className={style.wrapperBox}>
+                {displayedArray.map((el) => <div className={style.box}><h2>{el.title}</h2><p>{el.info}</p><p>{el.city}</p></div>)}
+            </div>
+
+            <div className={style.pagination}>
+                <Pagination
+                    total={Math.ceil(arr.length / vacanciesOnThePage)}
+                    onChange={setPaginalPageNumber}
+                    mt="sm"
+                />
+            </div>
         </div>
-
-        <Pagination
-            total={Math.ceil(arr.length / vacanciesOnThePage)}
-            onChange={setPaginalPageNumber}
-            mt="sm"
-        />
-
-
     </div>);
 }
 

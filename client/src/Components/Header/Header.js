@@ -1,11 +1,14 @@
-import style from './style.module.scss'
+import style from '../Header/style.module.scss'
+// import { Link } from 'react-router-dom'
 
 function Header() {
     return (<div className={style.wrapper}>
-        <h1>CoursesRUD</h1>
-        <p className={style.headerAdmin}>Администрирование</p>
-        <p className={style.headerWitch}>Просмотр</p>
-
+        <div className={style.item}>
+            <h1>CoursesRUD.</h1>
+            <div className={style.admin}></div>
+            <p className={style.headerAdmin}>Администрирование</p>
+            <p className={style.headerWitch}>Просмотр</p>
+        </div>
     </div>);
 }
 
