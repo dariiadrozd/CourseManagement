@@ -1,0 +1,19 @@
+.wrapper{
+    width: 1000px;
+    display: flex;
+align-items: center;
+
+    h1{
+        font: 600 36px 'Poppins';
+    }
+
+    .headerAdmin{
+      width: 250px;
+      display: flex;
+      justify-content: space-between;
+    margin-left: 100px;
+    }
+    .headerWitch{
+       font: 500 16px Inter;
+    }
+}

@@ -1,0 +1,22 @@
+.wrapper {
+    width: 800px;
+    margin: 50pz auto;
+
+    .name {
+        display: flex;
+        justify-content: space-between;
+        width: 640px;
+
+        h3 {
+            font: 700 20px Inter;
+        }
+    }
+
+    .course {
+       margin-bottom: 20px;
+        p {
+            font: 700 20px Inter;
+        }
+    }
+
+}
